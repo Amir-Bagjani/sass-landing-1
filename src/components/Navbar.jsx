@@ -16,8 +16,8 @@ const Navbar = () => {
             <a href="#features">features</a>
             <a href="#about">about</a>
             <a href="#review">review</a>
-            <a href="#pricing">home</a>
-            <a href="#contact">home</a>
+            <a href="#pricing">pricing</a>
+            <a href="#contact">contact</a>
         </nav>
 
     </header>

@@ -11,7 +11,7 @@
   border: none;
   text-transform: capitalize;
   scroll-behavior: smooth;
-//   transition: all 0.2s linear;
+  list-style: none;
 }
 *::selection{
     background-color: $pink;
