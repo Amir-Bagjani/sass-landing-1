@@ -1,4 +1,5 @@
 import AboutSection from "./AboutSection"
+import ContactSection from "./ContactSection"
 import FeaturesSection from "./FeaturesSection"
 import HomeSection from "./HomeSection"
 import Newsletter from "./Newsletter"
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Newsletter />
       <ReviewSection />
       <PricingSection />
+      <ContactSection />
     </>
   )
 }

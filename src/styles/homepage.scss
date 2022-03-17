@@ -267,7 +267,64 @@
     }
 }
 
+.contact{
+    @include grid(40rem);
 
+    .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 2rem;
+    }
+
+    form{
+        // align-self: center;
+        padding: 2rem 3rem;
+        border-radius: 0.5rem;
+        box-shadow: $box-shadow;
+        border: $border;
+        background-color: #fff;
+
+        .heading{
+            padding: 0;
+            padding-bottom: 2rem;
+            text-align-last: left;
+        }
+
+        .inputBox{
+            position: relative;
+
+            input, textarea{
+                @include grap-text(1.7rem);
+                width: 100%;
+                background: none;
+                margin: 1.5rem 0;
+                padding: 0.5rem 0;
+                border-bottom: $border;
+                text-transform: none;
+            }
+            textarea{
+                height: 13rem;
+                resize: none;
+            }
+
+            label{
+                @include grap-text(1.7rem);
+                position: absolute;
+                top: 1.7rem;
+                left: 0;
+                transition:  0.2s ease-in-out;
+            }
+
+            input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label{
+                top: -0.5rem;
+                font-size: 1.4rem;
+                color: $pink;
+            }
+        }
+
+    }
+}
 
 
 
