@@ -28,6 +28,9 @@ section {
   padding: 7.5rem 9% 2rem 9%;
   min-height: 100vh;
 }
+footer {
+  padding: 2rem 9%;
+}
 
 //utilities
 .heading{
@@ -59,15 +62,15 @@ section {
 }
 
 //media queries
-@media (max-width: 1200px) {
-}
-
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   section {
     padding: 7.5rem 3% 2rem 3%;
+  }
+  footer {
+    padding: 2rem 9%;
   }
 }
 
