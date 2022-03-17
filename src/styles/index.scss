@@ -11,9 +11,12 @@
   border: none;
   text-transform: capitalize;
   scroll-behavior: smooth;
-  transition: all 0.2s linear;
+//   transition: all 0.2s linear;
 }
-
+*::selection{
+    background-color: $pink;
+    color: #fff;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -38,6 +41,6 @@ section {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 05%;
+    font-size: 50%;
   }
 }

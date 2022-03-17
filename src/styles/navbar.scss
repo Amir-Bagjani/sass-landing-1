@@ -1,0 +1,89 @@
+@import "config";
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
+    .logo{
+        font-size: 2rem;
+        color: $purple;
+
+        span{
+            color: $pink;
+        }
+    }
+
+    .navbar{
+        a{
+            font-size: 1.7rem;
+            color: $purple;
+            margin-left: 2rem;
+            transition:all 0.3s linear;
+
+            &:hover{
+                color: $pink;
+            }
+        }
+    }
+
+    #menu-btn{
+        display: none;
+    }
+
+    label{
+        font-size: 3rem;
+        color: $purple;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+
+        .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 1rem 2rem;
+            border-top: $border;
+            box-shadow: $box-shadow;
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            transition: all 0.2s ease-in;
+
+            a{
+                display: block;
+                text-align: center;
+                padding: 1.5rem 0;
+            }
+        }
+
+        label{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #menu-btn:checked ~ .navbar{
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+        #menu-btn:checked ~ label::before{
+            content: "\f00d";
+        }
+    }
+}
