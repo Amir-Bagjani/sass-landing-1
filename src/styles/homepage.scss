@@ -164,6 +164,57 @@
     }
 }
 
+.review{
+
+    .box-container{
+        @include flex(30rem);
+
+        .box{
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: $box-shadow;
+            text-align: center;
+            position: relative;
+
+            .fa-quote-right{
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+                font-size: 8rem;
+                color: $pink;
+                opacity: 0.3;
+            }
+
+            .user{
+
+                img{
+                    width: 7rem;
+                    height: 7rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-top: 2rem;
+                }
+
+                h3{
+                    font-size: 2rem;
+                    color: $pink;
+                }
+
+                .stars i{
+                    font-size: 1.5rem;
+                    color: $purple;
+                    padding: 1rem 0.3rem;
+                }
+
+                .comment{
+                    @include grap-text(1.4rem);
+                }
+            }
+        }
+    }
+}
+
 
 
 
