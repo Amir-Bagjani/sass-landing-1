@@ -76,6 +76,35 @@
     }
 }
 
+.about{
+    background: url(../../public/images/about-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .column{
+        @include grid(40rem);
+
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+
+        .content{
+            h3{
+                @include title-text(3rem);
+            }
+            p{
+                @include grap-text(1.5rem);
+                padding: 1rem 0;
+            }
+            .buttons .btn:last-child{
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
 
 
 
@@ -103,6 +132,22 @@
             }
             p{
                 @include grap-text(1.5rem);
+            }
+        }
+    }
+
+    .about{
+        background-position: right;
+    }
+}
+@media (max-width: 450px){
+    .about .column .content .buttons{
+        .btn{
+            width: 100%;
+            text-align: center;
+
+            &:last-child{
+                margin: 1rem 0;
             }
         }
     }

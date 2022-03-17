@@ -1,3 +1,4 @@
+import AboutSection from "./AboutSection"
 import FeaturesSection from "./FeaturesSection"
 import HomeSection from "./HomeSection"
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <HomeSection />
       <FeaturesSection />
+      <AboutSection />
     </>
   )
 }
