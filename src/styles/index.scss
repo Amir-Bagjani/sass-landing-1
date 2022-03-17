@@ -30,6 +30,17 @@ section {
 }
 
 //utilities
+.heading{
+    background: $gradient;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;

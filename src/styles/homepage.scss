@@ -44,6 +44,51 @@
     }
 }
 
+
+.features{
+    
+    .box-container{
+        @include flex(30rem);
+
+        .box{
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: $box-shadow;
+            border: $border;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: 0.2s linear;
+
+            img{
+                height: 15rem;
+            }
+
+            h3{
+                @include title-text(2rem);
+                padding-top: 1rem;
+            }
+
+            p{
+                @include grap-text(1.3rem);
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px){
     .home{
         flex-direction: column-reverse;
