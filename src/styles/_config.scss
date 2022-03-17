@@ -1,0 +1,19 @@
+//variables
+$purple: #814096;
+$pink: #f83292;
+$gradient: linear-gradient(90deg, var(--purple), var(--pink));
+
+//functions and mixins
+@mixin title-text($size) {
+    color: black;
+    font-size: $size;
+}
+@mixin grap-text($size) {
+    color: gray;
+    font-size: $size;
+}
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+}
