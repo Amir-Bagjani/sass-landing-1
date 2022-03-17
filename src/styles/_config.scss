@@ -1,17 +1,17 @@
 //variables
 $purple: #814096;
 $pink: #f83292;
-$gradient: linear-gradient(90deg, var(--purple), var(--pink));
+$gradient: linear-gradient(90deg, $purple, $pink);
 $box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 $border: 0.1rem solid rgba(0, 0, 0, 0.1);
 
 //functions and mixins
 @mixin title-text($size) {
-    color: black;
+    color: #333;
     font-size: $size;
 }
 @mixin grap-text($size) {
-    color: gray;
+    color: #666;
     font-size: $size;
 }
 @mixin grid($val) {

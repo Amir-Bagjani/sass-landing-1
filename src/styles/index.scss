@@ -25,20 +25,41 @@ body{
     background:#f9f9f9;
 }
 section {
-  padding: 2rem 9%;
+  padding: 7.5rem 9% 2rem 9%;
+  min-height: 100vh;
+}
+
+//utilities
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+    background: $gradient;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+    transition: transform 0.2s ease;
+
+    &:hover{
+    transform: scale(1.09);
+    }
 }
 
 //media queries
 @media (max-width: 1200px) {
 }
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   section {
-    padding: 2rem;
+    padding: 7.5rem 3% 2rem 3%;
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;

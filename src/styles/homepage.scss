@@ -1,0 +1,64 @@
+@import "config";
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../public/images/home-bg-img.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .image{
+
+        img{
+            width: 35vw;
+            animation: float 3s infinite linear;
+        }
+    }
+
+    .content{
+
+        h3{
+            @include title-text(5.5rem);
+            text-transform: uppercase;
+
+            span{
+                color: $pink;
+                text-transform: uppercase;
+            }
+        }
+
+        p{
+            @include grap-text(1.7rem);
+            padding: 1rem 0;
+        }
+    }
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+}
+
+@media (max-width: 768px){
+    .home{
+        flex-direction: column-reverse;
+
+        .image img{
+            width: 100%;
+        }
+
+        .content{
+            h3{
+                @include title-text(3.5rem);
+            }
+            p{
+                @include grap-text(1.5rem);
+            }
+        }
+    }
+}
